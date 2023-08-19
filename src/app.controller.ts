@@ -1,6 +1,8 @@
 import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 import { typeReport } from './data/data';
 import { AppService } from './app.service';
+import { CreateReportDto } from './dtos/report.dto';
+
 @Controller('report')
 export class AppController {
   constructor(private readonly appService: AppService) {}
