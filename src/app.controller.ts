@@ -16,13 +16,8 @@ export class AppController {
   }
 
   @Post()
-  createIncomeReport(@Body() body: { amount: number }) {
+  createIncomeReport(@Body() body: CreateReportDto) {
     console.log(body);
-    return {};
-  }
-
-  @Post(':id')
-  createIncomeReportId() {
     return {};
   }
 }
